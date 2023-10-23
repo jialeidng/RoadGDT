@@ -1,0 +1,22 @@
+# import 3D library
+
+# import PC with only road data
+
+# fit principal lign through it
+# draw horisontals every x distance
+
+# minimise widths, get the final trajectory of the road
+
+# select sections with width changes
+    # for sudden jumps
+    # for gradual increases
+
+# cut PC into sections using widths
+
+
+# FIRST TEST IF SPARSE PC IS SUFFICIENT, otherwise, proceed:
+
+# find images tha correspond to each section
+# list images
+
+# these images can be used to generate a dense PC

@@ -1,0 +1,34 @@
+This set of scripts generate a segmented sparse PC using images in MERGED and its corresponding pointcloud file
+
+Process: P_dict.p ->  -> P_dict_labelled.p -> output.p -> labelled_pc.txt
+
+Utils:
+    - classes.py defines two classes ImageData and PointData.
+    - dict_labels.py contains each asset name and their corresponding default RGBs
+
+
+1. creat_PointInfo
+    - Reads both images.txt and points3D.txt
+    - Generates dataclass PointInfo for each point and assigns point ID and coordinates
+    - Generates dataclass ImageData for each point in an image
+    - Assigns each ImageData to a PointInfo
+    - Writes into temp file "P_dict.p" for further assigning a label
+
+
+2. assign_label.py
+    - Opens up temp file from previous step
+    - For each point, generate list of image RGBs
+    - Finds most frequent RGB color
+    - Assigns corresponding asset label to point according to "winning" RGB values
+    - Writes temp file "P_dict_labelled.p" for further writing into file
+
+
+3. output_config.py
+    - Configurates output file
+    - User must define assets to be included in output model and colours
+    - Writes to "output.p" to be written into file
+
+4. write.py
+    - writes "output.p" to pointcloud .txt file "labelled_pc.txt"
+
+

@@ -1,0 +1,17 @@
+This set of scripts prepare the images to be used for creating labelled sparse PC
+
+1. delete_every_other_image.py
+    - simple script that deletes every other image in a folder.
+    - only really used if images need to be cut.
+    - can also change to delete the nth images in a folder.
+
+2. create_mask.py
+    - To be used in PC reconstruction
+    - create_mask.py generates a mask that removes any labels that are not relevant, such as the sky or buildings.
+
+3. fuse_seg.py
+    - generates a mask that excludes everything except for the roadmarkings.
+    - where the mask is zero, set value to [0,0,0], i.e., black.
+    - adds roadmarkings to segmented images through addition.
+    - generates images in folder MERGED, which is what will be used
+
