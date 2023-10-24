@@ -1,10 +1,12 @@
 import pickle
 from itertools import chain
+import open3d as o3d
 
 
 def main():
     # create text file
-    f = open('../OUTPUT/all.txt', 'w+')
+    path = '../OUTPUT/surface_unknown.txt'
+    f = open(path, 'w+')
 
     # open output source file
     output = open('../DATA/Temp/output.p', 'rb')
@@ -23,6 +25,9 @@ def main():
 
     f.close()
     print('Written to .txt')
+
+    # pcd = o3d.io.read_point_cloud(path)
+    # o3d.io.write_point_cloud('../OUTPUT/output.ply')
 
 
 main()
