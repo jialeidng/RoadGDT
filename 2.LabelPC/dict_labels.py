@@ -8,6 +8,7 @@ asset_labels = {
     '(150, 100, 100)':    'arrow_multi',
     '(220, 20, 60)':      'centre_line_solid',
     '(0, 0, 142)':        'lane_line_dashed',
+
     '(70, 130, 180)':     'lane_line_solid',
     '(220, 220, 0)':      'transverse_give_way',
     '(128, 0, 0)':        'hatched_markings',

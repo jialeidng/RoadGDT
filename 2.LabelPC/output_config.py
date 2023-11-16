@@ -6,8 +6,8 @@ def main():
     P_dict = pickle.load(P_dict)
 
     asset_list = {
-        'surface_course': [255, 0, 255]  # Magenta
-        #'sidewalk': [0, 255, 255],  # Cyan
+        'surface_course': [255, 0, 255],  # Magenta
+        'sidewalk': [0, 255, 255],  # Cyan
         #'arrow_straight': [255, 255, 0],  # Yellow
         #'arrow_turn': [255, 0, 0],  # Red
         #'arrow_multi': [0, 255, 0],  # Lime
@@ -21,7 +21,7 @@ def main():
 
         #'unknown': [168, 168, 168]  # Grey
 
-        #'foliage': [113, 113, 113],
+        'foliage': [113, 113, 113],
         #'sign': [83, 83, 83],
         #'pole': [82, 82, 82],
         #'traffic_light': [81, 81, 81],

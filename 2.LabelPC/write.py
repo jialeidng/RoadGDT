@@ -1,11 +1,10 @@
 import pickle
 from itertools import chain
-import open3d as o3d
 
 
 def main():
     # create text file
-    path = '../OUTPUT/surface_unknown.txt'
+    path = '../OUTPUT/surface_sides.txt'
     f = open(path, 'w+')
 
     # open output source file
@@ -18,7 +17,7 @@ def main():
 
     for line in output:
         f.write('\n')
-        point_info = [line.coord_3D, line.color]
+        point_info = [line.coord_3D, [255], line.color]
         point_info = list(chain.from_iterable(point_info))  # create a list with format x, y, z, r, g, b
         point_info = str(point_info)[1:-1]  # convert list into string
         f.write(point_info)  # append list to document
