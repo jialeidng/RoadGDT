@@ -29,7 +29,7 @@ def main():
         mask = create_mask(markings)
         MERGED = fuse(semantic, markings, mask)
 
-        cv2.imwrite("../DATA/MERGED/" + k, MERGED)
+        cv2.imwrite("../OUTPUT/1.Dataprep/MERGED/" + k, MERGED)
         print("processed " + k)  # print image name being processed
 
 

@@ -4,11 +4,11 @@ from itertools import chain
 
 def main():
     # create text file
-    path = '../OUTPUT/surface_sides.txt'
+    path = '../OUTPUT/2.LabelPC/NAME.txt'
     f = open(path, 'w+')
 
     # open output source file
-    output = open('../DATA/Temp/output.p', 'rb')
+    output = open('../OUTPUT/TEMP/output.p', 'rb')
     output = pickle.load(output)
 
     # write number of points, as per .txt point cloud file conventions

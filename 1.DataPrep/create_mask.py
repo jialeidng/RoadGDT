@@ -32,7 +32,7 @@ for im in os.listdir(semantic_path):
     combined_mask = cv2.bitwise_not(combined_mask)
 
     # save mask in folder
-    mask_path = "../DATA/Mask/" + str(im)
+    mask_path = "../OUTPUT/1.Dataprep/MASK/" + str(im)
     cv2.imwrite(mask_path, combined_mask)
     print("generated mask " + str(im))
 
