@@ -49,7 +49,7 @@ def main():
 
     P_dict = P_dict_temp
 
-    pickle.dump(P_dict, open('../DATA/Temp/output.p', "wb"))
+    pickle.dump(P_dict, open('../OUTPUT/TEMP/output.p', "wb"))
     print("Configuration completed")
 
 
