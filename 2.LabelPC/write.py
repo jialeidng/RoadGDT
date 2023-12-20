@@ -8,7 +8,7 @@ def main():
     f = open(path, 'w+')
 
     # open output source file
-    output = open('../OUTPUT/TEMP/output.p', 'rb')
+    output = open('../OUTPUT/2.LabelPC/TEMP/output.p', 'rb')
     output = pickle.load(output)
 
     # write number of points, as per .txt point cloud file conventions
@@ -24,9 +24,6 @@ def main():
 
     f.close()
     print('Written to .txt')
-
-    # pcd = o3d.io.read_point_cloud(path)
-    # o3d.io.write_point_cloud('../OUTPUT/output.ply')
 
 
 main()

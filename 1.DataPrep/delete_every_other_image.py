@@ -13,7 +13,7 @@ def delete_every_other_image(folder_path):
                 print(f"Deleted: {file_name}")
 
 # Specify the path to the folder containing the images
-folder_path = "../DATA/Source/Colourimage"
+folder_path = "../DATA/Colourimage"
 
 # Call the function to delete every other image
 delete_every_other_image(folder_path)

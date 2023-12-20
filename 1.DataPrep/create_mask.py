@@ -10,13 +10,13 @@ building = np.array([97, 97, 97])
 print("defined objects to be masked")
 
 # Create mask1:
-mask_image = cv2.imread("../DATA/Source/Roadmarkings/171206_030550389_Camera_5_bin.png")
+mask_image = cv2.imread("../DATA/Roadmarkings/171206_030550389_Camera_5_bin.png")
 white = np.array([255, 255, 255])
 mask1 = cv2.inRange(mask_image, white, white)
 print("constant mask copied")
 
 # loops through all files in folder
-semantic_path = "../DATA/Source/Semantic/"
+semantic_path = "../DATA/Semantic/"
 
 for im in os.listdir(semantic_path):
     # read im

@@ -5,8 +5,8 @@ print("import ok")
 
 def main():
     # Initiate path names
-    SEMANTIC = "../DATA/Source/Semantic/"
-    ROADMARKINGS = "../DATA/Source/Roadmarkings/"
+    SEMANTIC = "../DATA/Semantic/"
+    ROADMARKINGS = "../DATA/Roadmarkings/"
 
     #initate path name lists
     semantic_paths = []

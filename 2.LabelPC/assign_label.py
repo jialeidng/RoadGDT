@@ -5,7 +5,7 @@ from dict_labels import asset_labels
 
 def main():
     # open P_dict
-    P_dict = open('../OUTPUT/TEMP/P_dict.p', 'rb')
+    P_dict = open('../OUTPUT/2.LabelPC/TEMP/P_dict.p', 'rb')
     P_dict = pickle.load(P_dict)
 
 
@@ -19,7 +19,7 @@ def main():
         RGB_voted = vote(RGB_list)
         P.asset_type = get_label(RGB_voted)
 
-    pickle.dump(P_dict, open('../OUTPUT/TEMP/P_dict_labelled.p', "wb"))
+    pickle.dump(P_dict, open('../OUTPUT/2.LabelPC/TEMP/P_dict_labelled.p', "wb"))
     print('Added labels')
 
 

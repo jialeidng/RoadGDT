@@ -23,10 +23,11 @@ def main():
     Im_dict = import_images(images)
 
     # organise Im_dict into list in P_dict
+    print('appending Im_dict to P_dict')
     append_ImageData_list(P_dict, Im_dict)
 
     # write to temp file
-    pickle.dump(P_dict, open('../OUTPUT/TEMP/P_dict.p', "wb"))
+    pickle.dump(P_dict, open('../OUTPUT/2.LabelPC/TEMP/P_dict.p', "wb"))
     print('Written temp pointinfo file')
 
 
@@ -73,7 +74,7 @@ def import_images(images):
 
 
 def get_RGB(seg_name, x, y):
-    path = "../OUTPUT/1.DataPrep/MERGED" + seg_name
+    path = "../OUTPUT/1.DataPrep/MERGED/" + seg_name
     im = Image.open(path).convert('RGB')
     r, g, b = im.getpixel((x, y))
     RGB = [r, g, b]
@@ -87,5 +88,6 @@ def append_ImageData_list(P_dict, Im_dict):
                 P.ImageData_list.append(Im)
             else:
                 continue
+
 
 main()

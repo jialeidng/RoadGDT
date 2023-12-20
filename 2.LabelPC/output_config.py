@@ -2,26 +2,26 @@ import pickle
 
 
 def main():
-    P_dict = open('../DATA/Temp/P_dict_labelled.p', 'rb')
+    P_dict = open('../OUTPUT/2.LabelPC/Temp/P_dict_labelled.p', 'rb')
     P_dict = pickle.load(P_dict)
 
     asset_list = {
         'surface_course': [255, 0, 255],  # Magenta
         'sidewalk': [0, 255, 255],  # Cyan
-        #'arrow_straight': [255, 255, 0],  # Yellow
-        #'arrow_turn': [255, 0, 0],  # Red
-        #'arrow_multi': [0, 255, 0],  # Lime
-        #'centre_line_solid': [0, 0, 255],  # Blue
-        #'lane_line_dashed': [128, 128, 0],  # Olive
-        #'lane_line_solid': [128, 0, 0],  # Maroon
-        #'transverse_give_way': [0, 128, 0],  # Green
-        #'hatched_markings': [0, 0, 128],  # Navy
-        #'crossing_zebra': [0, 128, 128],  # Teal
-        #'other': [0, 0, 0],  # Black
+        'arrow_straight': [255, 255, 0],  # Yellow
+        'arrow_turn': [255, 0, 0],  # Red
+        'arrow_multi': [0, 255, 0],  # Lime
+        'centre_line_solid': [0, 0, 255],  # Blue
+        'lane_line_dashed': [128, 128, 0],  # Olive
+        'lane_line_solid': [128, 0, 0],  # Maroon
+        'transverse_give_way': [0, 128, 0],  # Green
+        'hatched_markings': [0, 0, 128],  # Navy
+        'crossing_zebra': [0, 128, 128],  # Teal
+        'other': [0, 0, 0],  # Black
 
-        #'unknown': [168, 168, 168]  # Grey
+        'unknown': [168, 168, 168],  # Grey
 
-        'foliage': [113, 113, 113],
+        'foliage': [113, 113, 113]
         #'sign': [83, 83, 83],
         #'pole': [82, 82, 82],
         #'traffic_light': [81, 81, 81],
@@ -49,7 +49,7 @@ def main():
 
     P_dict = P_dict_temp
 
-    pickle.dump(P_dict, open('../OUTPUT/TEMP/output.p', "wb"))
+    pickle.dump(P_dict, open('../OUTPUT/2.LabelPC/TEMP/output.p', "wb"))
     print("Configuration completed")
 
 
