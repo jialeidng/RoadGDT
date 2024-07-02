@@ -4,7 +4,7 @@ from itertools import chain
 
 def main():
     # create text file
-    path = '../OUTPUT/2.LabelPC/NAME.txt'
+    path = '../OUTPUT/2.LabelPC/surface_unknown2.txt'
     f = open(path, 'w+')
 
     # open output source file

@@ -8,3 +8,10 @@ class cam_inf:
     translation: list  # Tx, Ty, Tz
     rotation: list  # Qw, Qx, Qy, Qz
     coords: list  # qx, qy, qz
+
+class get_pixel_info:
+    x_coord: int
+    y_coord: int
+    rgb: list  # R, G, B
+
+

@@ -19,9 +19,9 @@ def main():
         'crossing_zebra': [0, 128, 128],  # Teal
         'other': [0, 0, 0],  # Black
 
-        'unknown': [168, 168, 168],  # Grey
+        'unknown': [168, 168, 168]  # Grey
 
-        'foliage': [113, 113, 113]
+        #'foliage': [113, 113, 113]
         #'sign': [83, 83, 83],
         #'pole': [82, 82, 82],
         #'traffic_light': [81, 81, 81],

@@ -1,5 +1,8 @@
 This set of scripts uses the camera trajectory and assigns it to the post-processed PC generated in step 2.
 
+Utils:
+    - classes.py defines classes cam_inf,
+
 1. camera_path.py
     - Reads images.txt and extracts the given coordinated per image.
     - Converts to coordinates to XYZ.

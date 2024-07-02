@@ -47,7 +47,7 @@ def convert_coords(cam_inf_list):
 
 
 def write_trajectory(cam_inf_list):
-    output = open('../OUTPUT/3.Centreline/TEMP/trajectory_coords.txt', 'w+')
+    output = open('../OUTPUT/3.Centreline/trajectory_coords.txt', 'w+')
     output.write(str(len(cam_inf_list)))
     for line in cam_inf_list:
         output.write('\n')

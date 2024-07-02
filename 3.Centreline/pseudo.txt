@@ -1,0 +1,20 @@
+# open image
+# draw single line through it
+#   question: where to draw the line?
+#   question: better to have several lines or just the one line?
+
+# find out how to find boundaries
+# put boundaries in a list:
+
+select the relevant boundary
+- select first pixel
+    - check if the boundary is the same as the previous
+        - if yes:
+            go to next,
+    - check if one of the pixels are on the list of road boundaries
+        if no:
+            go to next
+    -  add pixel NOT on boundary to list
+
+
+# test in future with three lines: close, middle and far
